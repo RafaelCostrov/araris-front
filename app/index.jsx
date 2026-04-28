@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { Image, Pressable, Text, View } from "react-native";
+import { Image, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import "../global.css";
 import Button from "../components/Button";
@@ -23,12 +23,12 @@ export default function Index() {
         <View className="gap-2">
           <Button 
           title="Acesse sua conta"
-          onPress={() => router.push("/pages/Login")}
+          onPress={() => router.push("/login")}
           isPrimary={true}
           />
           <Button 
           title="Crie uma nova conta"
-          onPress={() => router.push("/pages/Register")}
+          onPress={() => router.push("/register")}
           isPrimary={false}
           />
         </View>
