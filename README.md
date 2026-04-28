@@ -1,50 +1,50 @@
-# Welcome to your Expo app 👋
+# Araris — Plataforma de Gestão Financeira para MEIs
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## O que é o Araris?
 
-## Get started
+O Araris é uma plataforma digital voltada para **Microempreendedores Individuais (MEIs)** que precisam organizar e acompanhar as finanças do seu negócio de forma simples e inteligente.
 
-1. Install dependencies
+A ideia central é reunir em um só lugar tudo o que um MEI precisa para manter as contas em dia, evitar surpresas e tomar decisões melhores sobre o futuro do negócio.
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## O que o sistema oferece?
 
-   ```bash
-   npx expo start
-   ```
+### Controle financeiro completo
+O MEI pode registrar todas as suas **entradas e saídas de dinheiro** — vendas, prestações de serviço, despesas com aluguel, materiais, transporte etc. Também é possível cadastrar contas que ainda vão vencer (a pagar ou a receber), com alertas automáticos quando os prazos se aproximam.
 
-In the output, you'll find options to open the app in a
+### Gestão de clientes e fornecedores
+Permite manter um cadastro simples das pessoas e empresas com quem o MEI trabalha, facilitando a associação de receitas e despesas a cada um deles.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Controle do DAS (imposto mensal do MEI)
+O sistema acompanha o pagamento da guia mensal do DAS — o imposto obrigatório do MEI — e avisa quando o vencimento está chegando ou quando há inadimplência.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Alertas e notificações inteligentes
+O Araris monitora automaticamente situações de risco e envia alertas: contas vencendo, DAS em atraso, limite de faturamento se aproximando, entre outros.
 
-## Get a fresh project
+### Simulação de crescimento
+Como o MEI tem um limite anual de faturamento (R$ 81.000,00), o sistema acompanha quanto já foi faturado no ano e avisa quando há risco de ultrapassar esse limite — o que exigiria migrar para outro tipo de empresa.
 
-When you're ready, run:
+### Previsão financeira com inteligência artificial
+Com base no histórico financeiro, o sistema consegue **prever receitas e despesas dos meses seguintes**, indicando se há risco de saldo negativo no futuro.
 
-```bash
-npm run reset-project
-```
+### Chatbot inteligente
+O MEI pode conversar com um assistente virtual que entende perguntas em linguagem natural, como *"Quanto eu faturei esse mês?"* ou *"Quais contas vencem essa semana?"*, e responde com as informações do próprio negócio.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Armazenamento de documentos
+É possível guardar comprovantes, notas fiscais e recibos diretamente na plataforma.
 
-## Learn more
+### Contas com múltiplos usuários
+O dono do negócio pode convidar colaboradores (como um contador ou sócio) para acessar as informações da conta, com níveis de permissão diferentes.
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Para quem é?
 
-## Join the community
+Para qualquer **MEI brasileiro** que queira sair das planilhas e ter uma visão clara e organizada da saúde financeira do seu negócio — sem precisar entender de contabilidade.
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Modelo de uso
+
+O Araris funciona no modelo **SaaS** (software como serviço), com um plano gratuito para experimentar e um plano premium que desbloqueia os recursos mais avançados, como a previsão por IA e o chatbot completo.
