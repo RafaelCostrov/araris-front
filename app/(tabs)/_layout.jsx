@@ -1,31 +1,20 @@
 import { Tabs } from "expo-router";
 import { BlurView } from "expo-blur";
-import { Platform, StyleSheet, TouchableOpacity, View } from "react-native";
-import { House, ChartColumnIncreasing, Plus, Landmark, BotMessageSquare } from "lucide-react-native";
+import { Platform, StyleSheet } from "react-native";
+import { House, ChartColumnIncreasing, Landmark, BotMessageSquare } from "lucide-react-native";
+import CustomHeader from "../../components/Header";
+import AddButton from "../../components/AddButton";
 
 function TabBackground() {
   if (Platform.OS === "android") return null;
   return <BlurView intensity={40} tint="light" style={StyleSheet.absoluteFill} />;
 }
 
-function CenterButton({ onPress }) {
-  return (
-    <TouchableOpacity
-      style={styles.centerButtonWrapper}
-      onPress={onPress}
-      activeOpacity={0.9}
-    >
-      <View style={styles.centerButton}>
-        <Plus color="#fff" size={26} strokeWidth={2.5} />
-      </View>
-    </TouchableOpacity>
-  );
-}
-
 export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
+        header: () => <CustomHeader />,
         tabBarShowLabel: false,
         tabBarStyle: styles.tabBar,
         tabBarItemStyle: styles.tabItem,
@@ -47,7 +36,7 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="add/index"
         options={{
-          tabBarButton: (props) => <CenterButton onPress={props.onPress} />,
+          tabBarButton: (props) => <AddButton onPress={props.onPress} />,
         }}
       />
       <Tabs.Screen
@@ -75,24 +64,5 @@ const styles = StyleSheet.create({
   },
   tabItem: {
     paddingTop: 10,
-  },
-  centerButtonWrapper: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    top: -5,
-  },
-  centerButton: {
-    width: 58,
-    height: 58,
-    borderRadius: 29,
-    backgroundColor: "#3B82F6",
-    alignItems: "center",
-    justifyContent: "center",
-    shadowColor: "#3B82F6",
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.45,
-    shadowRadius: 10,
-    elevation: 10,
   },
 });

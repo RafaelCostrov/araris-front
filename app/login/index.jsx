@@ -6,9 +6,20 @@ import "../../global.css";
 import Button from "../../components/Button";
 import InputText from "../../components/InputText";
 
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 export default function AcessarConta() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [emailError, setEmailError] = useState("");
+
+  function handleEmailBlur() {
+    if (email && !EMAIL_REGEX.test(email)) {
+      setEmailError("Insira um e-mail válido (ex: usuario@email.com)");
+    } else {
+      setEmailError("");
+    }
+  }
   return (
     <View className="flex-1 bg-azul-primario">
       <SafeAreaView className="flex-1 justify-between">
@@ -22,13 +33,15 @@ export default function AcessarConta() {
             Acesse sua conta
           </Text>
           <View className="gap-6">
-            <View className="w-[85%] self-center gap-4">
+            <View className="w-[85%] self-center gap-6">
               <InputText
                 label="E-mail"
                 placeholder="usuario@email.com"
                 value={email}
-                onChangeText={(text) => setEmail(text)}
+                onChangeText={(text) => { setEmail(text); setEmailError(""); }}
                 secureTextEntry={false}
+                onBlur={handleEmailBlur}
+                error={emailError}
               />
               <InputText
                 label="Senha"
