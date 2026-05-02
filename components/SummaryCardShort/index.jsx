@@ -1,9 +1,9 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import { MoreVertical, ArrowUp, ArrowDown } from "lucide-react-native";
 
-export default function SummaryCard({ icon, title, value, underValue, change, positive, period }) {
+export default function SummaryCardShort({ icon, title, value, underValue, change, positive, period }) {
   return (
-    <View className="bg-white rounded-2xl p-4 gap-1 shadow-sm w-[45%]">
+    <View className="bg-white rounded-2xl p-4 gap-1 shadow-sm flex-1">
       <View className="flex-row justify-between items-center mb-4">
         {icon}
         <TouchableOpacity activeOpacity={0.6} hitSlop={8}>

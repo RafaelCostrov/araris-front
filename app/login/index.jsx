@@ -36,6 +36,7 @@ export default function AcessarConta() {
             <View className="w-[85%] self-center gap-6">
               <InputText
                 label="E-mail"
+                required
                 placeholder="usuario@email.com"
                 value={email}
                 onChangeText={(text) => { setEmail(text); setEmailError(""); }}
@@ -45,6 +46,7 @@ export default function AcessarConta() {
               />
               <InputText
                 label="Senha"
+                required
                 placeholder="•••••••••••••"
                 value={password}
                 onChangeText={(text) => setPassword(text)}
@@ -63,7 +65,7 @@ export default function AcessarConta() {
           </View>
           <Text className="text-center font-poppins-medium text-texto-secundario">
             Não possui conta?{" "}
-            <Text onPress={() => router.replace("/Register")} className="text-azul-primario">
+            <Text onPress={() => router.replace("/register")} className="text-azul-primario">
               Se Cadastre
             </Text>
           </Text>
